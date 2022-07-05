@@ -1,0 +1,90 @@
+.page-footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__item {
+
+        &:not(:first-child) {
+            margin-left: 70px;
+        }
+
+        &:last-child {
+            margin-left: 93px;
+        }
+    }
+
+    &__logo {
+        @extend .logo;
+        &--white {
+            color: $white-color;
+        }
+    }
+
+    &__address {
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.7;
+        color: $white-color;
+        margin-top: 20px;
+    }
+
+    &__join-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white-color;
+    }
+
+    &__social-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    &__social-item {
+        width: 44px;
+        height: 44px;
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $white-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: $active-color;
+        }
+    }
+
+    &__social-icon {
+        fill: currentColor;
+    }
+
+    &__contact {
+    
+        margin: 9px 0 0 0;
+    
+    }
+}

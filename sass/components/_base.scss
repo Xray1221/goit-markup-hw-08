@@ -1,0 +1,28 @@
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+}
+body { 
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+    color: var(--general-text-color);
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding: 94px 0px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+}
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: auto;
+}

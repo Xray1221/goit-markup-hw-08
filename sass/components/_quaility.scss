@@ -1,0 +1,39 @@
+.quaility {
+    display: flex;
+
+    &__item {
+        width: 270px;
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;
+        color: $general-text-color;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $grey-color;
+        margin: 10px 0 0 0;
+        letter-spacing: 0.03em;
+    }
+}
