@@ -1,0 +1,40 @@
+.quaility {
+    &__item {
+        width: 100%;
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F4FA;
+        height: 120px;
+        border-radius: 4px;
+        @media screen and (min-width: 480px) {
+            width: 450px;
+
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;
+        color: $general-text-color;
+        text-transform: uppercase;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $grey-color;
+        margin: 10px 0 0 0;
+        letter-spacing: 0.03em;
+    }
+}

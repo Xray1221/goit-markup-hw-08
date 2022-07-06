@@ -1,20 +1,7 @@
 @import './base/normalize';
 @import './utils/vars';
-@import './components/base';
-@import './components/page-header';
-@import './components/logo';
-@import './components/nav';
-@import './components/contact';
-@import './components/service';
-@import './components/quaility';
-@import './components/work';
-@import './components/team';
-@import './components/clients';
-@import './components/filter';
-@import './components/project';
-@import './components/page-footer';
-@import './components/footer-contact';
-@import './components/subscribe';
-@import './components/modal';
-@import './components/checkbox';
-
+@import './new-base/base';
+@import './new-components/service';
+@import './new-components/quaility';
+@import './new-components/team';
+@import './new-components/clients';
