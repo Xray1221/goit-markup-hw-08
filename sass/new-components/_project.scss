@@ -23,6 +23,12 @@
                 margin-top: 0;
             }
         }
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+            &:not(:first-child) {
+                margin-top: 0;
+            }
+        }
 
     }
 

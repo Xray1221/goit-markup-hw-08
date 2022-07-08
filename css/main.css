@@ -703,6 +703,14 @@ body {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: 370px;
+  }
+  .project__item:not(:first-child) {
+    margin-top: 0;
+  }
+}
 .project__thumb-wrapper {
   position: relative;
   overflow: hidden;
