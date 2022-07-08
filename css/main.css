@@ -698,8 +698,6 @@ body {
 @media screen and (min-width: 768px) {
   .project__item {
     width: 354px;
-    border: 1px solid #eee;
-    border-top: none;
   }
   .project__item:not(:first-child) {
     margin-top: 0;
@@ -733,6 +731,9 @@ body {
 }
 .project__wrapper {
   padding: 20px 24px;
+  height: calc(100% - 294px);
+  border: 1px solid #eee;
+  border-top: none;
 }
 .project__title {
   font-weight: 700;
