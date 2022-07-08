@@ -22,6 +22,8 @@
             &:not(:first-child) {
                 margin-top: 0;
             }
+            border: 1px solid #eee;
+            border-top: none;
         }
 
     }
@@ -60,8 +62,6 @@
 
     &__wrapper {
         padding: 20px 24px;
-        border: 1px solid #EEEEEE;
-        border-top: none;
     }
 
     &__title {
