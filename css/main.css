@@ -634,6 +634,12 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
 .filter__item {
   margin-bottom: 15px;
 }
