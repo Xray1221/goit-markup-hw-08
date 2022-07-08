@@ -1,21 +1,29 @@
 .project {
-    
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: stretch;
+    }
+        
     &__item {
-        &:nth-child(1) {
-            margin-top: 0;
-        }
-        margin: 30px 15px;
+        
         background-color: $white-color;
         cursor: pointer;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
         &:hover  {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            &:not(:first-child) {
+                margin-top: 0;
+            }
+        }
+
     }
 
     

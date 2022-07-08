@@ -2,20 +2,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        justify-content:center;
+        margin-bottom: 30px;
+    }  
 
     &__item {
         &:not(:first-child) {
             margin-left: 8px;
         }
         margin-bottom: 15px;
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 480px) and (max-width:767px) {
             &:nth-child(4) {
                 margin: 0;
             }
             &:nth-child(5) {
                 margin-bottom: 0;
             }
+        }
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
         }
        
     }

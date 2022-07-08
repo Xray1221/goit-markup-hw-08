@@ -9,12 +9,23 @@
         color: $white-color;
         width: 219px;
         margin: 0 auto;
+        @media screen and (min-width: 1200px) {
+            margin: 0;
+        }
     }
 
     &__form {
         margin-top: 20px;
         justify-content: center;
         align-items: center;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
     }
 
     &__input {
@@ -33,6 +44,12 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         margin-bottom: 20px;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+           width: 450px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
 
         &:placeholder {
             font-weight: 400;
@@ -64,6 +81,9 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         padding: 10px 29px;
         margin-left: 12px;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            margin-left: 0;
+        }
     }
 
     &__icon {

@@ -1,6 +1,10 @@
 .footer-contact {
     list-style: none;
     padding: 0;
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        margin-bottom: 60px;
+    }
+
 &__item {
     &:not(:first-child) {
         margin-top: 8px;
