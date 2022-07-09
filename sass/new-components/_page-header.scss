@@ -1,0 +1,43 @@
+.page-header {
+    @media screen and (min-width: 320px) and (max-width:767px) {
+        border-bottom: 1px solid #ECECEC;
+        background-color: $white-color;
+        padding: 16px 0;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+    }
+    border-bottom: 1px solid #ECECEC;
+    background-color: $white-color;
+    padding: 26px 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__nav {
+        margin-left: 93px;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            margin-left: 88px;
+        }
+    }
+    &__contact {
+        margin-left: auto;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }  
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
+
+    &__logo {
+        @extend .logo;
+        &--black {
+            color: $general-text-color;
+        }
+    }
+
+}

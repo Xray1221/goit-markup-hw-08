@@ -1,0 +1,32 @@
+.mobile-contact {
+    margin-top: 302px;
+    &__phone-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $active-color;
+        text-decoration: none;
+    }
+    &__phone-item {
+        margin-bottom: 32px;
+    }
+
+    &__mail-item {
+        margin-bottom: 64px;
+        @media screen and (min-width: 320px) and (max-width:480px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__mail-link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: $grey-color;
+        text-decoration: none;
+    }
+    
+}
