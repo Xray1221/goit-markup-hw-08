@@ -6,6 +6,9 @@ body {
     background-color: var(--white-color);
     color: var(--general-text-color);
 }
+body.modal-open {
+    overflow: hidden;
+}
 .container {
     width: 100%;
     padding-left: 15px;
