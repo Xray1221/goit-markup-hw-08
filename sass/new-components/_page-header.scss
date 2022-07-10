@@ -9,8 +9,11 @@
     }
     border-bottom: 1px solid #ECECEC;
     background-color: $white-color;
-    padding: 26px 0;
-
+    padding: 24px 0;
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        padding: 21px 0;
+    }
+   
     &__wrapper {
         display: flex;
         align-items: center;
