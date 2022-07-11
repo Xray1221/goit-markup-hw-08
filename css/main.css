@@ -260,6 +260,11 @@ body.modal-open {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -304,12 +309,37 @@ body.modal-open {
 
 .service {
   padding: 118px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-title.svg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-mobile-1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 100%;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-mobile-2x-min.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-tab-1x-min.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-tab-2x-min.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-desctop-1x-min.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-desctop-2x-min.jpg);
+  }
 }
 .service__title {
   width: 100%;
@@ -483,11 +513,6 @@ body.modal-open {
 .team__photo {
   display: block;
   width: 100%;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team__photo {
-    width: 354px;
-  }
 }
 .team__wrapper {
   padding: 30px 10px;
@@ -770,7 +795,7 @@ body.modal-open {
     align-items: baseline;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .page-footer__item {
     margin: 0 auto;
     text-align: center;
@@ -1057,7 +1082,7 @@ body.modal-open {
   background-color: #FFFFFF;
   padding: 24px 0;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .page-header {
     border-bottom: 1px solid #ECECEC;
     background-color: #FFFFFF;
@@ -1198,7 +1223,7 @@ body.modal-open {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
     display: none;
   }

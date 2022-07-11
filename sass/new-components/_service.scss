@@ -1,12 +1,32 @@
 .service {
     padding: 118px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-title.svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-mobile-1x-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 100%;
     margin: 0 auto;
-
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-mobile-2x-min.jpg);        
+        }
+        @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-tab-1x-min.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-tab-2x-min.jpg);        
+        }
+        }
+        @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-desctop-1x-min.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1x-2x/Hero-desctop-2x-min.jpg);        
+        }
+        }    
     &__title {
         width: 100%;
         font-weight: 900;
