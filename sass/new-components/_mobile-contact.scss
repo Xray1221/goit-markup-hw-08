@@ -1,13 +1,15 @@
 .mobile-contact {
-    margin-top: 302px;
+    margin-top: auto;
     &__phone-link {
-        font-style: normal;
         font-weight: 500;
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
         color: $active-color;
         text-decoration: none;
+        @media screen and (min-width: 320px) and (max-width:480px) {
+            font-size: 24px;
+        }
     }
     &__phone-item {
         margin-bottom: 32px;
